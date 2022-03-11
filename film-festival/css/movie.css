@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+  }  
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+  }  
+  .clearfix:after {
+    clear: both;
+  }  
+  #top_header {
+    padding: 1.5em 0;
+  }
+  #top_header .logo {
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: 700;
+  }
+  #top_header .logo span {
+    font-weight: 300;
+    color: #73e298;
+  }
+  #top_header #main_nav {
+    float: right;
+    font-size: .9em;
+  }
+  #top_header #main_nav a {
+    color: #8b8b9f;
+    text-decoration: none;
+    margin-left: 1em;
+  }  
+  .menu {
+    display: none;
+  }  
+  #banner {
+    position: relative;
+    width: 100%;
+    padding: 6.5em 0;
+    background: #2c2c2c;
+  }
+  #banner #banner_content_wrapper {
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  #banner #poster {
+    width: 275px;
+    position: relative;
+    float: left;
+  }
+  #banner #poster .featured_image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: .5em;
+    box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+  }
+  #banner #poster .play_button {
+    position: absolute;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -40px;
+  }
+  #banner #content {
+    float: left;
+    width: 500px;
+    margin-left: 100px;
+    z-index: 1;
+  }
+  #banner #content .title {
+    display: inline;
+    font-size: 1.75em;
+    color: #FFFFFF;
+  }
+  #banner #content .ratings {
+    display: inline;
+    margin-left: 1em;
+  }
+  #banner #content .ratings i {
+    color: #ff420e;
+    font-size: 1.35em;
+    margin: 0 .15em;
+  }
+  #banner #content .ratings .inactive {
+    color: #dbdbdb;
+  }
+  #banner #content .description {
+    color: #f5f5f5;
+    font-size: 1em;
+    line-height: 2;
+  }
+  #banner #content .info {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  #banner #content .info span {
+    margin: 0 .5em;
+  }
+  
+  #top_movies, #top_shows {
+    padding: 1.5em 0 0;
+  }
+  #top_movies header, #top_shows header {
+    /* padding: 0 0 1.5em 0; */
+  }
+  #top_movies header h2, #top_movies header .view_more, #top_shows header h2, #top_shows header .view_more {
+    display: inline;
+  }
+  #top_movies header h2, #top_shows header h2 {
+    font-size: 1.75em;
+    padding-left: 15px;
+    font-weight: 500;
+  }
+  #top_movies header .view_more, #top_shows header .view_more {
+    float: right;
+    font-size: .8em;
+    margin: .75em 3.5% 0 0;
+  }
+  
+  #top_movies {
+    border-bottom: 1px solid #d4d4d4;
+  }
+  
+  .row {
+    width: 100%;
+  }
+  .row .post {
+    width: 100%;
+    float: left;
+    margin-right: 2.5%;
+  }
+  .row .post img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: .5em;
+  }
+  .row .post .title {
+    font-size: 1.25em;
+    margin: 1em 0 0 0;
+    color: #252529;
+  }
+  .row .post .post_info {
+    font-size: .75em;
+    color: #8b8b9f;
+    margin: 0.5em 0;
+  }
+  
+  #newsletter {
+    padding: 5em 0;
+    text-align: center;
+    background: #2a2a2e;
+  }
+  #newsletter .newsletter_inner {
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #newsletter h2 {
+    font-size: 1.75em;
+    color: #FFFFFF;
+  }
+  #newsletter .sign_up_form {
+    margin-top: 3em;
+  }
+  #newsletter .sign_up_form input[type="text"], #newsletter .sign_up_form input[type="email"] {
+    width: 48%;
+    margin: 0 .5%;
+    height: 3.25em;
+    border: none;
+    outline: none;
+    border-radius: .3em;
+    background: #404043;
+    padding: .5em 1.25em;
+    font-size: .8em;
+    color: #FFFFFF;
+  }
+  #newsletter .sign_up_form .button {
+    border: none;
+    outline: none;
+    padding: 1em 4.5em;
+    border-radius: 2em;
+    background: #73e298;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: .9em;
+    margin-top: 3em;
+  }
+  
+  #main_footer {
+    padding: 2.5em 0;
+    text-align: center;
+  }
+  #main_footer .logo {
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: 700;
+  }
+  #main_footer .logo span {
+    font-weight: 300;
+    color: #73e298;
+  }
+  #main_footer .copyright {
+    color: #8b8b9f;
+    font-size: .75em;
+    margin-top: 1em;
+  }
+  #main_footer .links {
+    display: inline;
+  }
+  #main_footer .links a {
+    color: #8b8b9f;
+    font-size: .75em;
+    text-decoration: none;
+    margin: 0 .5em;
+  }
+  #main_footer .links a:hover {
+    color: #73e298;
+  }
+  #top_movies .owl-carousel .owl-item .thumbImg{
+    max-height: 370px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    height: 370px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.40);
+    transition: all 0.5s ease;
+    object-position: top;
+  }
+  #top_movies .post .title{
+    margin: 15px 0 5px 10px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+  }
+  #top_movies .post .post_info {
+    font-size: 12px;
+    font-weight: 100;
+    color: #9E9E9E;
+    padding-bottom: 15px;
+    margin: 0 0 0 10px;
+  }
+  #top_movies .owl-theme .owl-dots{
+    top: -30px;
+    right: 40px;
+    position: absolute;
+  }
+  #top_movies .owl-theme .owl-nav .owl-next{
+    position: absolute;
+    right: 0px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 0 50px;
+    background: rgb(0,15,35);
+    background: linear-gradient(90deg, rgba(0,15,35,0) 0%, #000000 76%, #9E9E9E 100%);
+    margin: 0;
+    top: 30px;
+    right: 0;
+  }
+  #top_movies .owl-theme .owl-nav .owl-prev{
+    position: absolute;
+    right: 0px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 0 50px;
+    background: rgb(0,15,35);
+    background: linear-gradient(275deg, rgba(0,15,35,0) 0%, rgb(0 0 0) 76%, rgb(44 44 44) 100%);
+    margin: 0;
+    top: 30px;
+    left: 0;
+    right: auto;
+  }
+  #top_movies .owl-theme .owl-nav .disabled{
+    display: none;
+  }
+  #top_movies .playNowBtn {
+    display: block;
+    height: 36px;
+    width: 36px;
+    padding: 13px;
+    border-radius: 30px;
+    background: #ff420e;
+    box-shadow: 0px 0px 12px rgba(234, 124, 21, 0.4);
+  }
+  #top_movies .owl-carousel .owl-stage{
+    padding-top: 30px;
+  }
+  #top_movies .owl-carousel .owl-item{
+    transition: all 0.5s ease;
+  }  
+  #top_movies .owl-carousel .owl-item:hover{
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  #top_movies .owl-carousel .owl-item .playNowBtn img{
+    height: auto;
+  }
+  #top_movies .addToPlayListBtn {
+    display: block;
+    height: 36px;
+    width: 36px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid#ff420e;
+    background: transparent;
+    opacity: 0.5;
+  }
+  #top_movies .owl-carousel .owl-item .addToPlayListBtn img{
+    height: auto;
+  }
+  .actionBtn{
+    display: none;
+  }
+  .owl-item:hover .post .actionBtn{
+    display: flex;
+    margin-top: -200px;
+    background: linear-gradient(180deg, rgba(0,15,35,0) 0%, #000000 76%, #000 100%);
+    height: 200px;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-radius: 4px;
+  }
+  #top_movies .post:hover .title{
+    margin-top: 10px;
+  }
+  #top_movies .actionBtn a {
+    display: block;
+    margin: 10px 0 0 10px;
+  }
+  .moviethumbImg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+    object-position: top;
+    filter: blur(8px);
+    opacity: 0.4;
+  }
+  #banner_content_wrapper p.movieCategories{
+    padding: 0;
+    margin: 5px 0 0;
+    color: #fff;
+  }
+  #banner_content_wrapper p.movieCategories span {
+    color: #ccc;
+  }
+  @media only screen and (max-width: 768px) {
+    #main_nav {
+      display: none;
+    }
+  
+    #main_nav.active {
+      display: block;
+      width: 100%;
+    }
+    #main_nav.active a {
+      display: block;
+      padding: 1em 0;
+      border-bottom: 1px solid #E9E9E9;
+    }
+    #main_nav.active a:last-child {
+      border-bottom: none;
+    }
+  
+    .menu {
+      display: block;
+      float: right;
+    }
+    .menu i {
+      font-size: 1.5em;
+      color: #252529;
+    }
+  
+    #banner {
+      padding: 3.5em 0;
+    }
+    #banner #poster {
+      width: 250px;
+    }
+    #banner #poster .play_button {
+      width: 60px;
+      left: 50%;
+      top: 50%;
+      margin: -30px 0 0 -30px;
+    }
+    #banner #content {
+      margin-left: 50px;
+    }
+    #banner #content .title {
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+    #banner #content .ratings i {
+      font-size: 1em;
+    }
+    #banner #content .description {
+      font-size: .9em;
+      line-height: 2;
+    }
+    #banner #content .info {
+      font-size: .7em;
+      font-weight: 700;
+      margin-top: 2em;
+    }
+    #banner #content .info span {
+      margin: 0 .25em;
+    }  
+   
+    #top_movies header, #top_shows header {
+      /* padding: 0 0 1.5em 1.25%; */
+    }
+    #top_movies header h2, #top_shows header h2 {
+      font-size: 1.5em;
+    }
+    #top_movies header .view_more, #top_shows header .view_more {
+      margin: .75em 2.25% 0 0;
+    }  
+    .row .post {
+      width: 30.6%;
+      margin-right: 0 1.25% 2em 1.25%;
+    }
+    .row .post .title {
+      font-size: 1em;
+      margin: .5em 0 0 0;
+    }
+    .row .post .post_info {
+      font-size: .65em;
+    }
+  }
+  @media (max-width: 575px) {
+    #banner #banner_content_wrapper {
+      display: block;
+    }
+    #banner #banner_content_wrapper #poster {
+      width: 250px;
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+    #banner #banner_content_wrapper #content {
+      width: 100%;
+      margin: 1em auto 0 auto;
+    }  
+    .row .post {
+      width: 250px;
+      margin: 0 auto 2em auto;
+      float: none;
+    }  
+    #top_movies, #top_shows {
+      margin-bottom: 2em;
+    }  
+    #newsletter {
+      padding: 3em 0;
+    }
+    #newsletter h2 {
+      font-size: 1.35em;
+    }
+    #newsletter .sign_up_form {
+      margin-top: 2em;
+    }
+    #newsletter .sign_up_form input input[type="text"], #newsletter .sign_up_form input input[type="email"] {
+      width: 90%;
+      margin-bottom: 1em;
+    }
+    #newsletter .sign_up_form input .button {
+      margin-top: 2em;
+    }
+    #top_movies .owl-theme .owl-nav,
+    #top_movies .owl-theme .owl-dots{
+      display: none;
+    }
+  }

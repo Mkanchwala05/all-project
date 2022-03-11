@@ -1,0 +1,1282 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	font-family: 'Gilroy-Light', sans-serif;
+    color: #000;
+}
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url(../fonts/Gilroy-ExtraBold.otf) format('opentype');
+}
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(../fonts/Gilroy-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/Helvetica.ttf) format('opentype');
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Gilroy-ExtraBold;
+}
+.top-header {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    padding: 10px;
+}
+
+.search-field {
+    position: relative;
+    margin-right: 15px;
+    padding-top: 4px;
+}
+
+.search-field svg {
+    cursor: pointer;
+}
+
+.search-field .search-input {
+    display: none;
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    z-index: 9999;
+    top: calc(100% - -20px);
+    padding: 15px;
+}
+
+.search-field .search-input:before {
+    content: '';
+    border-bottom: 10px solid #000;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-head {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.social-head li a {
+    background: #171717;
+    padding: 10px;
+    margin: 0 10px;
+    width: 40px;
+    display: inline-flex;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-head li a:hover {
+    background: #ff420e;
+}
+
+.social-head li a svg {
+    width: 18px;
+    height: 18px;
+}
+
+.main-header {
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    top: 60px;
+    left: 0;
+}
+
+.main-header .logo img {
+    width: 130px;
+    padding-top: 10px;
+}
+
+.home-banner {
+    background: url(../images/banner.png) no-repeat top;
+    height: 1038px;    
+    background-size: 100%;
+    width: 100%;
+}
+
+.banner-caption {        
+    padding-top: 360px;
+    width: 1375px;
+    margin: 0 auto 0 0;
+    padding-left: 110px;
+    
+}
+
+.banner-caption h3 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 60px;
+}
+
+.banner-caption span {
+    font-size: 24px;
+    color: #fff;
+}
+
+.banner-caption button {
+    margin-top: 350px;
+    float: right;
+}
+
+.site-btn {
+    background: #ff420e;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    min-width: 178px;
+    border-radius: 50px;
+    padding: 8px 15px 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.site-btn:hover {
+    background: #dc3709;
+    color: #fff !important;
+}
+
+.site-btn.stroke {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.site-btn.stroke:hover {
+    background: #ff420e;
+    color: #ff420e;
+    border-color: #ff420e;
+}
+
+.nav-menus > ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menus > ul > li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menus ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.nav-menus ul li a:hover {
+    color: #ff420e;
+}
+
+.era-of-online h3 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: Gilroy-Light;
+}
+
+.era-of-online h2 {
+    font-weight: 700;
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+
+.era-of-online p {
+    font-size: 24px;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+}
+
+.enroll-process {
+    width: 1000px;
+    margin: 60px auto 0;
+    max-width: 100%;
+    position: relative;
+    padding: 40px 0;
+}
+
+.enroll-process .record {
+    color: #ccc;
+    font-size: 37px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding-left: 25px;
+}
+
+.enroll-process .record:before {
+    content: '';
+    position: absolute;
+    background: #b51700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 20px;
+    left: 0;
+}
+
+.enroll-process .lowerstep:before {
+    content: '';
+    border-top: 4px solid #000;
+    border-left: 4px solid #000;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.enroll-process .lowerstep:after {
+    content: '';
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 99;
+    top: 0;
+    right: 0;
+}
+
+.enroll-process .upperstep:before {
+    content: '';
+    border-bottom: 4px solid #000;
+    border-left: 4px solid #000;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 99;
+    bottom: 0;
+    left: 0; 
+}
+
+.enroll-process .upperstep:after {
+    content: '';
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+}
+
+.enroll-process ul {
+    width: 800px;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.enroll-process ul li {
+    width: 33.333%;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.enroll-process .enroll-steps {
+    width: 140px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.enroll-process .enroll-steps .step {
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #000;
+    background: #fff;
+    height: 140px;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 9;
+    position: relative;
+}
+
+.upperstep {
+    flex-direction: row-reverse;
+}
+
+.enroll-process ul li:before {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 39%;
+}
+
+.enroll-process ul.upperstep li:after {
+    content: '';
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 36%;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.enroll-process ul.lowerstep li:after {
+    content: '';
+    border-right: 1px solid #999;
+    border-top: 1px solid #999;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 36%;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.enroll-process ul.upperstep li:last-child:before {
+    width: 50%;
+    left: auto;
+    right: 0px;
+    transform: translate(0%, -50%);
+}
+
+.enroll-process ul.upperstep li:last-child:after {
+    border-left: 1px solid #999;
+    height: 100%;
+    border-top: 0;
+    transform: translateY(-100%);
+    left: 50%;
+    top: 0;
+    width: 100%;
+}
+
+.enroll-process ul.upperstep li:first-child:before {
+    width: 50%;
+    left: 0;
+}
+
+.enroll-process ul.lowerstep li:first-child:before {
+    width: 50%;
+    right: 0%;
+    left: auto;
+    transform: translate(0%, 0%);
+}
+
+.festival-highlight {
+    padding: 100px 0;
+}
+
+.festival-highlight h3 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    font-family: Gilroy-Light;
+}
+
+.festival-highlight .gallery-section {
+    background: #f5f5f5;
+    padding: 45px;
+}
+
+.festival-highlight .gallery-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.festival-highlight .gallery-section ul li {
+    padding: 15px;
+    width: 33.333%
+}
+
+.festival-highlight .gallery-section ul li:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.festival-highlight .gallery-head {
+    font-size: 105px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    line-height: 90px;
+    margin-bottom: 110px;
+    font-family: Gilroy-ExtraBold;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.popular-news h3 {
+    font-size: 52px;
+    text-align: left;
+    font-weight: 700;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.popular-news p {
+    font-size: 22px;
+    color: #000;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.upcoming-events {
+    padding: 20px 0;
+}
+
+.upcoming-events h3 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.upcoming-events p {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.upcoming-events h5 {
+    position: absolute;
+    bottom: 45px;
+    left: 15px;
+    color: #fff;
+    padding: 0 15px;
+    text-align: left;
+    width: 100%;
+    font-family: Gilroy-Light;
+}
+
+.upcoming-events span {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.footer-bottom {
+    background: #000;
+    margin-top: 80px;
+    padding: 50px 15px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+ }
+
+.footer-bottom h4 {
+    font-size: 22px;
+    color: #ff420e;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-bottom ul li a:hover {
+    color: #ff420e;
+    text-decoration: none;
+}
+
+.footer-bottom .contact-footer-info {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer-bottom .contact-footer-info svg {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 20px;
+}
+
+.msg-send {
+    display: flex;
+    width: 220px;
+}
+
+.msg-send input {
+    background: transparent !important;
+    border-radius: 10px 0 0 10px;
+    height: 48px;
+    border: 1px solid #fff;
+    border-right: 0;
+}
+
+.msg-send input:focus {
+    border-color: #ff420e;
+    box-shadow: none;
+}
+
+.msg-send button {
+    background: rgba(255,255,255,.3);
+    padding: 13px;
+    height: 48px;
+    width: 70px;
+    border: 1px solid #fff;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.msg-send button:hover {
+    background: #ff420e;
+}
+
+.social-footer {
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.social-footer a {
+    margin: 0px 17px;
+}
+
+.social-footer a:hover svg path {
+    fill: #ff420e;
+}
+
+.innerpage .main-header {
+    position: static;
+    background: #2c2c2c;
+}
+
+.innerpage .main-header .nav-menus ul li a {
+    font-size: 14px;
+    margin: 0 13px;
+}
+
+.innerpage .main-header .nav-menus ul li a.site-btn {
+    min-width: 100px;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.txt-link {
+    color: #ff420e;
+}
+
+.txt-link:hover {
+    color: #ff420e;
+}
+.auth-form.uploadformfiles form{
+  position: relative;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.auth-form .form-check input{
+  width: auto;
+}
+.auth-form .form-check{
+  display: flex;
+  align-items: flex-end;
+}
+
+.fileuploading{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  display: none;
+}
+.uploadformfiles .fileuploading{
+  display: flex;
+}
+.fileuploading img{
+  width: 300px;
+}
+#contactUsPage .image{
+  width: auto;
+  object-fit: cover;
+}
+#about-us{
+  display:block;
+   width:100%;
+   line-height:1.6em;
+}
+#about-us h2{
+  padding: 30px;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#about-intro img{
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  margin-top: 30px;
+}
+/* DEMO USE ONLY - CAN BE DELETED */
+#about-us #about-intro{
+  margin-bottom:50px;
+}
+#about-us #about-intro p{
+  margin:20px 0 0 0;
+   padding:0;
+}
+#about-us #about-intro p:first-child{
+  margin-top:0;
+}
+#about-us #team{
+  margin-bottom:0;
+}
+#about-us #team ul{
+  margin:0;
+   padding:0;
+   list-style:none;
+   display: flex;
+   flex-wrap: wrap;   
+  justify-content: space-evenly;
+}
+#about-us #team ul li{
+  width: 310px;
+  position: relative;
+}
+#about-us #team ul li figure{
+  position:relative;
+   text-align:center;
+}
+#about-us #team ul li figure img{
+  width: 280px;
+  height: 250px;
+  object-fit: cover;
+}
+#about-us #team ul li figure figcaption{
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  color: #FFFFFF;
+  background-color: #000000;
+  background: hsla(0, 0%, 0%, 0.8);
+  border-radius: 50%;
+}
+#about-us #team ul li:hover figure figcaption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+#about-us #team ul li figure figcaption p{
+  margin:15px 15px 0 15px;
+   padding:0;
+}
+#about-us #team ul li figure figcaption p:first-child{
+  font-size: 18px;
+  margin: 0;
+}
+#about-us #team ul li figure figcaption .team_name{
+  font-weight:bold;
+}
+#about-us #team ul li figure figcaption .team_title{
+  margin: 5px 0 0;
+  font-size: 14px;
+  line-height: normal;
+}
+#about-us #team ul li figure figcaption .team_description{
+  text-align:left;
+}
+.liveSessionBody ul .media{
+    background: rgb(243, 243, 243);
+    border-color: rgb(221, 221, 221);
+    border-width: 1px;
+    border-radius: 0px;
+    padding: 15px;
+    margin-bottom:10px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+.liveSessionBody ul .media:hover{
+    background: #fff;
+    box-shadow: 0 4px 10px #EEEEEE;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.liveSessionBody ul .media .media-Header{
+    border-radius: 3px;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    color: rgb(243, 243, 243);
+    background: rgb(153, 153, 153);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.liveSessionBody ul .media:hover .media-Header{
+    background: rgb(255 66 14);
+    color: #fff;
+}
+.liveSessionBody ul .media p{
+    margin: 0;
+}
+.liveSessionBody ul .media .media-body p{
+    color: #888;
+}
+.liveSessionBody ul .media .media-body img{
+    width: 16px;
+}
+.liveSessionBody ul .media:hover h5{
+    color: #ff420e;
+}
+.liveSessionBody ul .media:hover .media-body p{
+    color: #2c2c2c;
+}
+@media screen and (max-width: 1600px) {
+
+    .banner-caption{
+        padding-top: 260px;
+        width: 1295px;        
+        margin: 0 auto 0 0;
+        padding-left: 190px;
+    }
+    .home-banner{
+        height: 948px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .top-header {
+        font-size: 15px;
+    }
+
+    .nav-menus ul li a {
+        font-size: 15px;
+        margin: 0 15px;
+    }
+
+    .nav-menus ul li a.site-btn {
+        min-width: 120px;
+    }
+
+    .home-banner {
+        height: 758px;
+    }
+
+    .banner-caption {
+        width: 1145px;
+        /* padding-left: 75px; */
+    }
+
+    .banner-caption h3 {
+        font-size: 40px;
+    }
+
+    .banner-caption span {
+        font-size: 18px;
+    }
+
+    .banner-caption button {
+        margin-top: 270px;
+    }
+
+    .era-of-online h3 {
+        font-size: 32px;
+    }
+
+    .era-of-online h2 {
+        font-size: 70px;
+    }
+
+    .era-of-online p {
+        font-size: 18px;
+    }
+
+    .enroll-process {
+        width: 800px;
+    }
+
+    .enroll-process ul {
+        width: 650px;
+    }
+
+    .enroll-process ul li {
+        margin: 20px 0;
+    }
+
+    .enroll-process .enroll-steps {
+        width: 100px;
+        font-size: 18px;
+    }
+
+    .enroll-process .enroll-steps .step {
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .festival-highlight .gallery-head {
+        font-size: 65px;
+        line-height: 30px;
+        margin-bottom: 70px;
+    }
+
+    .popular-news h3 {
+        font-size: 32px;
+    }
+
+    .popular-news p {
+        font-size: 18px;
+    }
+
+    .festival-highlight .gallery-section {
+        padding: 20px;
+    }
+
+    .upcoming-events h3 {
+        font-size: 32px;
+    }
+
+    .upcoming-events p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .upcoming-events h5 {
+        font-size: 14px;
+        bottom: 35px;
+    }
+
+    .upcoming-events span {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        margin-top: 80px;
+        padding: 50px 15px 30px;
+    }
+
+    .footer-bottom h4 {
+        font-size: 18px;
+    }
+
+    .footer-bottom p, .footer-bottom ul li a {
+        font-size: 14px;
+    }
+
+    .msg-send input {
+        height: 36px;
+    }
+
+    .msg-send button {
+        padding: 8px;
+        height: 36px;
+        width: 50px;
+    }
+
+    .msg-send button svg {
+        width: 20px;
+    }
+
+    .social-footer a {
+        margin: 0px 10px;
+    }
+
+    .social-footer a svg {
+        width: 20px;
+        height: 22px;
+    }
+    .footer-bottom .contact-footer-info svg{
+        width: 18px;
+        height: auto;
+    }
+    .popular-news p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1336px) {
+    .banner-caption{
+        padding-left: 75px;
+        width: 965px;
+        padding-top: 230px;
+    }
+    .era-of-online h2{
+        font-size: 50px;
+    }   
+}
+@media (max-width: 1280px) {
+    .banner-caption {
+        padding-top: 220px;
+    }    
+    .banner-caption h3 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1200px) {
+	.nav-menus {
+	    height: 60px;
+        display: flex;
+	}
+
+	.footer-bottom .footer-container .footer-info > div {
+		padding-right: 50px;
+	}
+
+	.nav-menus ul li a, .innerpage .main-header .nav-menus ul li a {
+		font-size: 13px;
+		margin: 0 12px;
+	}
+
+    .nav-menus ul li .site-btn, .innerpage .main-header .nav-menus ul li .site-btn {
+        margin: 0 6px;
+    }
+    .banner-caption {
+        padding-top: 160px;
+        width: 790px;
+    }
+    .banner-caption button {
+        margin-top: 220px;
+    }
+    .home-banner {
+        height: 580px;
+    }
+    .top-header{
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .top-header .container > div{
+        flex-wrap: wrap;
+    }
+    .top-header .container > div>div{
+        width: 100%;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-bottom{
+        padding: 50px 10px 20px;
+    }
+    .footer-bottom .col-md-3{
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+    .footer-bottom .col-md-3:first-child{
+        flex: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .footer-bottom ul{
+        padding: 0;
+    }
+}
+
+@media  (max-width: 992px) {
+	.nav-menus {
+	    height: auto;
+	}
+
+	.nav-menus > ul {
+		position: absolute;
+    	left: 0;
+		height: auto;
+		flex-direction: column;
+	    width: 100%;
+	    top: 100%;
+	    background: #2c3134;
+	    padding: 10px;
+	    display: none;
+		max-height: 550px;
+		overflow-y: auto;
+        overflow-x: hidden;
+        transition: height 0.6s ease;
+	}
+
+	.nav-menus > ul > li {
+		display: block;
+	}
+
+	.nav-menus ul li a {
+		font-size: 16px;
+		margin: 0;
+	    display: inline-block;
+	    padding: 10px 15px;
+	    width: 100%;
+	}
+
+	.footer-link {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.footer-link ul {
+	    margin: 15px 0;
+	}
+}
+
+@media (max-width: 768px) {
+    .main-header{
+        top: 80px;
+    }
+    .home-banner {
+        height: 440px;
+    }
+    .festival-highlight .col-md-7,
+    .festival-highlight .col-md-5{
+        flex: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .festival-highlight .col-md-5{
+        margin-top: 25px;
+    }
+    .banner-caption {
+        padding-top: 130px;
+        width: 610px;
+    }
+    .banner-caption h3 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .banner-caption button.site-btn{
+        font-size: 14px;
+        color: #fff;
+        min-width: 140px;
+        padding: 8px 15px;
+        margin-top: 170px;
+    }
+    .popular-news h3{
+        padding: 10px 15px 0;
+    }
+    .popular-news p{
+        padding: 0 15px;
+        }
+    .festival-highlight{
+        padding: 100px 0 50px;
+    }
+	.footer-bottom .footer-container .footer-info {
+		flex-wrap: wrap;
+	}
+
+	.footer-bottom .footer-container .footer-info > div {
+		padding-right: 0;
+    	margin-bottom: 30px;
+	}
+
+	.footer-link ul {
+		padding-right: 10px;
+	}
+
+	.footer-link ul li a {
+		line-height: 20px;
+	    display: inline-block;
+	    margin-bottom: 10px;
+	}
+
+	.section-head {
+		font-size: 20px;
+    }
+    .festival-highlight h3{
+        margin-bottom: 170px;
+    }
+    .festival-highlight .col-md-5 h3{
+        margin-bottom: 10px;
+    }
+    .festival-highlight .gallery-head{
+        font-size: 105px;
+        line-height: 30px;
+        margin-bottom: 160px;
+    }
+    .eventPagebody .card-media{
+        width: 49%;
+    }
+    #contactUsPage .image {
+        width: 100%;
+        object-fit: cover;
+        height: 330px;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .icon .one,
+    .icon .two,
+    .icon .three{
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+    .nav-menus > ul{
+        display: flex;
+        list-style: none;
+        height: 0;
+        padding: 0;
+        z-index: 2;
+        background: #2c2c2c;
+    }
+    .nav-menus.responsive > ul{
+        height: 453px;
+    }
+    .innerpage .main-header .nav-menus ul li a.site-btn {
+        min-width: 120px;
+        margin: 10px 15px 0;
+        width: 90%;
+    }
+    .innerpage .nav-menus.responsive > ul{
+        top: 222px;
+    }
+    .innerpage .nav-menus.responsive > ul li a{
+        font-size: 16px;
+        margin: 0;
+    }
+}
+@media (max-width: 640px) {
+  .nav-menus ul li a.site-btn{
+    margin: 10px auto 0;
+    width: 90%;
+    float: none; 
+  }
+  .footer-bottom .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  .banner-caption{
+      width: 100%;
+      padding-left: 0;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 240px;
+  }
+  .upcoming-events .img-responsive{
+      width: 100%;   
+  }
+  .festival-highlight{
+      overflow: hidden;
+  }
+  .main-header {
+      top: 100px;
+      padding: 0;
+  }
+  .banner-caption > div{
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+  }
+  .banner-caption h3,.banner-caption span{
+      color: #000;
+  }
+  .banner-caption button.site-btn{
+      float: none;
+      margin: 20px auto 0;
+  }
+  .home-banner {
+      height: 400px;
+  }
+  .era-of-online h3 {
+      font-size: 22px;
+  }
+  .era-of-online h2, .festival-highlight h3  {
+      font-size: 36px;
+  }
+  .enroll-process .record{
+      font-size: 26px;
+  }
+  .enroll-process .record:before{
+      top: 10px;
+  }
+  .festival-highlight .gallery-head{
+      font-size: 55px;
+      line-height: 30px;
+      margin-bottom: 65px;
+  }
+  .festival-highlight h3 {
+      margin-bottom: 70px;
+  }
+  .eventPagebody .card-media{
+      width: 100%;
+  }
+  .liveSessionBody ul .media .media-body{
+      font-size: 16px;
+  }
+  .liveSessionBody ul .media .media-Header{
+      height: 60px;
+      width: 60px;
+  }
+  #contactUsPage .image {
+      width: 100%;
+      object-fit: contain;
+      height: 200px;
+  }
+  
+  .hostNameBox {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .singleEventcard .chip{
+      margin: 2% 2% 2% 0; 
+  }
+    
+}
